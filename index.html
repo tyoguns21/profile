@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jasa Sondir - SondirPro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -19,48 +21,200 @@
       </div>
     </header>
 
+    <!-- Promo banner: Jasa Sondir -->
+    <section class="promo-banner py-3 text-white">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div>
+          <strong class="me-2">Jasa Sondir Profesional</strong>
+          <span class="d-block d-md-inline">Pengujian kedalaman & daya dukung tanah — cepat, akurat, dan berstandar.</span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <a class="btn btn-success" href="https://wa.me/6285946981627?text=Halo%20saya%20ingin%20konsultasi%20jasa%20sondir" target="_blank" rel="noopener">Konsul via WhatsApp</a>
+          <a class="btn btn-outline-light d-none d-md-inline" href="#kontak">Minta Penawaran</a>
+        </div>
+      </div>
+    </section>
+
     <main>
       <section class="hero">
+        <div class="hero-background"></div>
         <div class="container hero-inner">
           <div class="hero-text">
-            <h1>Jasa Sondir Profesional untuk Pondasi Aman</h1>
-            <p>Pengujian kedalaman dan daya dukung tanah (sondir) cepat, akurat, dan sesuai standar. Ideal untuk proyek rumah, gedung, dan infrastruktur.</p>
-            <a href="#kontak" class="btn">Minta Penawaran Gratis</a>
+            <h1>Fondasi Kuat, Masa Depan Terukur!</h1>
+            <h3>Layanan Bor Tanah Profesional dan Terintegrasi</h3>
+            <p>Solusi Sumber Air Bersih Terintegrasi dengan Teknologi Mutakhir. Tim ahli kami menyediakan layanan pengeboran air dalam berpengalaman, mengutamakan presisi alat berat dan standar industri untuk hasil optimal.</p>
+            <div class="hero-buttons">
+              <a href="https://wa.me/6285946981627?text=Halo%20saya%20ingin%20konsultasi%20jasa%20sondir" target="_blank" rel="noopener" class="btn btn-primary">Konsultasi Melalui Chat, Segera!</a>
+              <a href="#kontak" class="btn btn-secondary">Dapatkan Penawaran Menarik!</a>
+            </div>
           </div>
           <div class="hero-image">
-            <img src="https://via.placeholder.com/520x360?text=Sondir" alt="Alat sondir" />
+            <img src="https://via.placeholder.com/480x520?text=Engineer+Team" alt="Tim profesional sondir" />
           </div>
         </div>
       </section>
 
+      <!-- Section: Mengapa Pilih Kami -->
+      <section class="section why-us alt">
+        <div class="container">
+          <h2>Mengapa Pilih Kami?</h2>
+          <div class="why-us-grid">
+            <div class="why-us-card">
+              <div class="icon">📊</div>
+              <h3>Profil Tanah Akurat</h3>
+              <p>Ketahuilah profil tanah yang akan Anda bangun seperti kepadatan relatif dan kapasitas daya dukung tanah dengan presisi tinggi.</p>
+            </div>
+            <div class="why-us-card">
+              <div class="icon">🛡️</div>
+              <h3>Keamanan Bangunan</h3>
+              <p>Pastikan tanah di lahan yang akan Anda bangun kuat untuk mendukung bangunan yang akan dibangun di atasnya.</p>
+            </div>
+            <div class="why-us-card">
+              <div class="icon">🏗️</div>
+              <h3>Kapasitas Daya Pondasi</h3>
+              <p>Struktur tanah akan menentukan kedalaman, ukuran, dan jenis pondasi yang cocok dari data sondir yang dihasilkan.</p>
+            </div>
+            <div class="why-us-card">
+              <div class="icon">✅</div>
+              <h3>Syarat Pembuatan IMB</h3>
+              <p>Hasil data sondir dapat digunakan untuk mengurus legalitas & perijinan IMB. Legalitasnya terjamin secara legal & terdaftar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Layanan Kami -->
       <section id="layanan" class="section container">
         <h2>Layanan Kami</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Sondir Manual & Metrik</h3>
-            <p>Pengukuran kedalaman dan kekuatan tanah menggunakan metode sondir standar untuk data keandalan tinggi.</p>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Sondir (CPT)</h3>
+            <p>Pengukuran kedalaman dan kekuatan tanah menggunakan metode sondir standar.</p>
+            <p class="service-price">Deal Fee: Rp 2.000.000</p>
           </article>
-          <article class="card">
-            <h3>Laporan Teknikal</h3>
-            <p>Laporan lengkap termasuk grafik, rekomendasi kedalaman pondasi, dan interpretasi data oleh insinyur.</p>
+          <article class="service-card">
+            <div class="service-icon">🪨</div>
+            <h3>Boring SPT</h3>
+            <p>Pengujian kedalaman tanah dengan metode boring hingga 30 meter dengan sampel SPT.</p>
+            <p class="service-price">Deal Fee: Rp 9.000.000</p>
           </article>
-          <article class="card">
-            <h3>Mobilisasi & Pengawasan</h3>
-            <p>Tim berpengalaman datang ke lokasi, setup alat, dan melakukan pengujian hingga selesai.</p>
+          <article class="service-card">
+            <div class="service-icon">🧪</div>
+            <h3>Uji Lab. Mekanika Tanah</h3>
+            <p>Analisis laboratorium lengkap untuk sampel tanah dengan standar internasional.</p>
+            <p class="service-price">Deal Fee: Rp 1.500.000</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Bor Pile</h3>
+            <p>Layanan pengeboran dengan diameter 40 cm untuk pembuatan pondasi pile.</p>
+            <p class="service-price">Deal Fee: Rp 100.000/meter</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">📍</div>
+            <h3>Topografi</h3>
+            <p>Pengukuran topografi detail situasi, contour, section, dan batas lahan.</p>
+            <p class="service-price">Deal Fee: Rp 2.000.000</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">📸</div>
+            <h3>Foto Udara UAV</h3>
+            <p>Pemetaan udara dengan UAV orthomosaic untuk dokumentasi proyek profesional.</p>
+            <p class="service-price">Deal Fee: Rp 500.000</p>
           </article>
         </div>
       </section>
 
-      <section id="proses" class="section alt">
+      <!-- Section: Galeri Proyek -->
+      <section id="galeri" class="section alt">
         <div class="container">
-          <h2>Proses Kerja</h2>
-          <ol class="process">
-            <li>Survei lokasi & penjadwalan</li>
-            <li>Pelaksanaan sondir (pengukuran di lapangan)</li>
-            <li>Analisis data & pembuatan laporan</li>
-            <li>Serah terima laporan dan rekomendasi</li>
-          </ol>
+          <h2>Galeri Proyek</h2>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x250?text=Proyek+1" alt="Proyek sondir 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x250?text=Proyek+2" alt="Proyek sondir 2" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x250?text=Proyek+3" alt="Proyek sondir 3" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x250?text=Proyek+4" alt="Proyek sondir 4" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x250?text=Proyek+5" alt="Proyek sondir 5" />
+            </div>
+            <div class="gallery-item">
+              <img src="https://via.placeholder.com/300x250?text=Proyek+6" alt="Proyek sondir 6" />
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- Section: Klien Kami -->
+      <section id="klien" class="section container">
+        <h2>Klien Kami</h2>
+        <p class="section-subtitle">Dipercaya oleh lebih dari 1.000+ klien di seluruh Indonesia</p>
+        <div class="clients-grid">
+          <div class="client-item">
+            <p class="client-name">PT. Kereta Api Indonesia</p>
+            <p class="client-project">Jalur Ganda Kereta Api Cigombong – Cicurug</p>
+          </div>
+          <div class="client-item">
+            <p class="client-name">PT. PGI Pusat Gadai Indonesia</p>
+            <p class="client-project">Pembangunan Villa di Cisarua</p>
+          </div>
+          <div class="client-item">
+            <p class="client-name">PT. Margautama Nusantara</p>
+            <p class="client-project">Pelebaran Ruas Jalan Tol BSD 7.25 Km</p>
+          </div>
+          <div class="client-item">
+            <p class="client-name">PT. Bimaska Sukses Jaya</p>
+            <p class="client-project">Pembangunan Pabrik & Gudang</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Output yang Diterima -->
+      <section id="output" class="section alt">
+        <div class="container">
+          <h2>Output yang Diterima oleh Klien</h2>
+          <div class="output-grid">
+            <div class="output-item">
+              <div class="output-icon">📄</div>
+              <h3>Softcopy Data Grafik</h3>
+              <p>Laporan digital dengan grafik sondir yang detail dan mudah dianalisis.</p>
+            </div>
+            <div class="output-item">
+              <div class="output-icon">📋</div>
+              <h3>Hardcopy Laporan Lengkap</h3>
+              <p>Laporan cetak profesional dengan rekomendasi pondasi dangkal & dalam.</p>
+            </div>
+            <div class="output-item">
+              <div class="output-icon">📸</div>
+              <h3>Foto Dokumentasi</h3>
+              <p>Dokumentasi visual lengkap proses pengujian di lapangan.</p>
+            </div>
+            <div class="output-item">
+              <div class="output-icon">🗺️</div>
+              <h3>Sketsa Posisi Titik</h3>
+              <p>Sketsa lokasi dan koordinat titik-titik pengujian sondir.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Proses Kerja -->
+      <section id="proses" class="section container">
+        <h2>Proses Kerja</h2>
+        <ol class="process">
+          <li>Survei lokasi & penjadwalan</li>
+          <li>Pelaksanaan sondir (pengukuran di lapangan)</li>
+          <li>Analisis data & pembuatan laporan</li>
+          <li>Serah terima laporan dan rekomendasi</li>
+        </ol>
       </section>
 
       <section id="harga" class="section container">
@@ -110,6 +264,15 @@
       </div>
     </footer>
 
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <!-- Floating WhatsApp button (visible on small screens) -->
+    <div class="whatsapp-fab d-md-none">
+      <a class="btn btn-success" href="https://wa.me/6285946981627?text=Halo%20saya%20ingin%20konsultasi%20jasa%20sondir" target="_blank" rel="noopener" aria-label="Konsultasi via WhatsApp">
+        <!-- simple phone icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.487 17.14l-4.01-.57a1.043 1.043 0 0 0-1.01.32l-1.86 1.9a15.01 15.01 0 0 1-7.06-7.06l1.9-1.86a1.042 1.042 0 0 0 .32-1.01l-.57-4.01A1.043 1.043 0 0 0 6.7 2H4.037A1.037 1.037 0 0 0 3 3.037C3 14.405 9.595 21 20.963 21A1.037 1.037 0 0 0 22 19.963V17.3c0-.4-.26-.76-.513-.16z"/></svg>
+      </a>
+    </div>
   </body>
 </html>
