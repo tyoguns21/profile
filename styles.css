@@ -25,8 +25,8 @@ body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;color:#1f2937;back
 .btn-primary:hover{background:#0a9a3f;transform:translateY(-2px);box-shadow:0 6px 20px rgba(13,182,80,0.3)}
 .btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
 .btn-secondary:hover{background:#fff;color:#1e3c72;transform:translateY(-2px)}
-.hero-image{flex:1;text-align:center}
-.hero-image img{max-width:100%;height:auto;border-radius:12px;filter:drop-shadow(0 10px 30px rgba(0,0,0,0.2))}
+.hero-image{flex:1;text-align:center;background:#e0e7ff;border-radius:12px;overflow:hidden;min-height:350px;display:flex;align-items:center;justify-content:center}
+.hero-image img{max-width:100%;height:100%;object-fit:cover;border-radius:12px;filter:drop-shadow(0 10px 30px rgba(0,0,0,0.2));display:block}
 .section{padding:2.25rem 0;background:transparent}
 .section.alt{background:#fff}
 h2{margin-top:0}
@@ -74,8 +74,8 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{width:100%;pad
 
 /* Gallery Grid */
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
-.gallery-item{position:relative;overflow:hidden;border-radius:10px;box-shadow:0 4px 12px rgba(31,41,55,0.1)}
-.gallery-item img{width:100%;height:250px;object-fit:cover;transition:transform 0.3s ease}
+.gallery-item{position:relative;overflow:hidden;border-radius:10px;box-shadow:0 4px 12px rgba(31,41,55,0.1);background:#e0e7ff;min-height:250px}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s ease;display:block}
 .gallery-item:hover img{transform:scale(1.05)}
 
 /* Clients Grid */
