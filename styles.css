@@ -1,0 +1,43 @@
+:root{
+  --accent:#0066cc;
+  --muted:#6b7280;
+  --bg:#f7f7fb;
+  --max-width:1100px;
+  --radius:8px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;color:#1f2937;background:var(--bg);line-height:1.5}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.site-header{background:#fff;border-bottom:1px solid #e6e9ef}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+.brand{font-weight:700;color:var(--accent);text-decoration:none}
+.nav a{margin-left:1rem;color:#374151;text-decoration:none}
+.nav .cta{background:var(--accent);color:#fff;padding:0.45rem 0.8rem;border-radius:6px}
+.hero{padding:3rem 0;background:linear-gradient(180deg,#ffffff 0%, #f3f6fb 100%)}
+.hero-inner{display:flex;gap:2rem;align-items:center}
+.hero-text h1{font-size:clamp(1.4rem,3.6vw,2.4rem);margin:0 0 .6rem}
+.hero-text p{color:var(--muted);margin:0 0 1rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:0.75rem 1rem;border-radius:6px;text-decoration:none}
+.hero-image img{max-width:100%;border-radius:8px}
+.section{padding:2.25rem 0;background:transparent}
+.section.alt{background:#fff}
+h2{margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 4px 12px rgba(31,41,55,0.06)}
+.process{counter-reset:step;padding-left:0}
+.process li{list-style:none;margin:0 0 .75rem;padding-left:2.25rem;position:relative}
+.process li:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;background:var(--accent);color:#fff;width:1.75rem;height:1.75rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.pricing{display:flex;flex-wrap:wrap;gap:1rem}
+.price-card{background:#fff;padding:1rem;border-radius:8px;flex:1;min-width:220px}
+.price{font-weight:700;color:var(--accent)}
+.contact .container{max-width:780px}
+form label{display:block;margin-bottom:.75rem}
+input[type="text"],input[type="email"],input[type="tel"],textarea{width:100%;padding:.5rem;border:1px solid #e4e7ec;border-radius:6px}
+.feedback{margin-top:.5rem;color:green}
+.site-footer{padding:1rem 0;background:#fff;border-top:1px solid #e6e9ef;margin-top:2rem}
+
+@media (max-width:900px){
+  .hero-inner{flex-direction:column}
+  .nav{display:none}
+  .site-header .container{padding:0.5rem 1rem}
+}
