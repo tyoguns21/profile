@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Android Developer</title>
+    <title>SS Studio - Google Play Console Rental Service</title>
     <style>
         * {
             margin: 0;
@@ -41,6 +41,14 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
+            gap: 2rem;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex: 1;
         }
 
         .logo {
@@ -77,6 +85,34 @@
 
         .nav-menu a:hover::after {
             width: 100%;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(45deg, #00d4ff, #5b51d8);
+            border-color: #00d4ff;
         }
 
         /* Hero Section */
@@ -402,13 +438,19 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">AndroidDev</a>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="nav-left">
+                    <a href="#" class="logo">🎮 SS Studio</a>
+                    <ul class="nav-menu">
+                        <li><a href="#home" data-en="Home" data-id="Beranda">Beranda</a></li>
+                        <li><a href="#about" data-en="Services" data-id="Layanan">Layanan</a></li>
+                        <li><a href="#projects" data-en="Pricing" data-id="Pricing">Pricing</a></li>
+                        <li><a href="#contact" data-en="Contact" data-id="Hubungi Kami">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="id">ID</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -416,134 +458,132 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="floating-icons">
-            <div class="icon">📱</div>
-            <div class="icon">⚡</div>
-            <div class="icon">🚀</div>
-            <div class="icon">💡</div>
+            <div class="icon">�</div>
+            <div class="icon">📦</div>
+            <div class="icon">💰</div>
+            <div class="icon">✨</div>
         </div>
         <div class="hero-content">
-            <h1>Halo, Saya Android Developer</h1>
-            <p class="subtitle">Membangun Aplikasi Mobile yang Inovatif</p>
-            <p class="description">
-                Saya adalah seorang Android developer dengan pengalaman dalam mengembangkan 
-                aplikasi mobile yang user-friendly dan performant menggunakan teknologi terbaru.
+            <h1 data-en="🚀 Rent Google Play Console" data-id="🚀 Sewa Google Play Console">🚀 Sewa Google Play Console</h1>
+            <p class="subtitle" data-en="Professional Service from SS Studio" data-id="Layanan Profesional dari SS Studio">Layanan Profesional dari SS Studio</p>
+            <p class="description" data-en="We provide a trusted Google Play Console rental solution to help you launch your application to Google Play Store safely, quickly and affordably." data-id="Kami menyediakan solusi rental Google Play Console terpercaya untuk membantu Anda meluncurkan aplikasi ke Google Play Store dengan aman, cepat, dan terjangkau.">
+                Kami menyediakan solusi rental Google Play Console terpercaya untuk membantu 
+                Anda meluncurkan aplikasi ke Google Play Store dengan aman, cepat, dan terjangkau.
             </p>
-            <a href="#projects" class="cta-button">Lihat Portfolio</a>
+            <a href="#contact" class="cta-button" data-en="Get Started" data-id="Mulai Sekarang">Mulai Sekarang</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Tentang Saya</h2>
+            <h2 class="section-title" data-en="About SS Studio" data-id="Tentang SS Studio">Tentang SS Studio</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        Saya adalah seorang Android developer yang passionate dengan pengalaman 3+ tahun 
-                        dalam mengembangkan aplikasi mobile. Saya memiliki keahlian dalam Kotlin, Java, 
-                        dan berbagai framework modern untuk Android development.
+                    <p style="font-size: 1.2rem; color: #5b51d8; font-weight: bold;">
+                        "SS Studio: Professional application development with the best tools. Create exceptional and functional digital experiences."
                     </p>
                     <br>
-                    <p>
-                        Saya selalu mengikuti best practices dalam development dan senang belajar 
-                        teknologi baru untuk menciptakan aplikasi yang berkualitas tinggi dan 
-                        memberikan pengalaman terbaik bagi pengguna.
+                    <p data-en="SS Studio is a professional team experienced in helping developers and companies launch their applications on Google Play Store safely and reliably. We have helped hundreds of applications reach millions of users." data-id="SS Studio adalah tim profesional yang berpengalaman dalam membantu developer dan perusahaan untuk meluncurkan aplikasi mereka di Google Play Store dengan mudah dan terpercaya. Kami telah membantu ratusan aplikasi mencapai jutaan user.">
+                        SS Studio adalah tim profesional yang berpengalaman dalam membantu developer dan 
+                        perusahaan untuk meluncurkan aplikasi mereka di Google Play Store dengan mudah dan 
+                        terpercaya. Kami telah membantu ratusan aplikasi mencapai jutaan user.
+                    </p>
+                    <br>
+                    <p data-en="With years of experience in the Android ecosystem and Google Play, we understand every detail of the application publication process and best practices for your application's success." data-id="Dengan pengalaman bertahun-tahun dalam ekosistem Android dan Google Play, kami memahami setiap detail proses publikasi aplikasi dan best practices untuk kesuksesan aplikasi Anda.">
+                        Dengan pengalaman bertahun-tahun dalam ekosistem Android dan Google Play, kami 
+                        memahami setiap detail proses publikasi aplikasi dan best practices untuk kesuksesan 
+                        aplikasi Anda.
                     </p>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-item">
-                        <div class="skill-icon">📱</div>
-                        <h3>Kotlin</h3>
+                        <div class="skill-icon">🔐</div>
+                        <h3 data-en="Safe & Trusted" data-id="Aman & Terpercaya">Aman & Terpercaya</h3>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-icon">☕</div>
-                        <h3>Java</h3>
+                        <div class="skill-icon">⚡</div>
+                        <h3 data-en="Fast & Efficient" data-id="Cepat & Efisien">Cepat & Efisien</h3>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-icon">🎨</div>
-                        <h3>UI/UX</h3>
+                        <div class="skill-icon">💰</div>
+                        <h3 data-en="Affordable Price" data-id="Harga Terjangkau">Harga Terjangkau</h3>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-icon">🔧</div>
-                        <h3>Android Studio</h3>
+                        <div class="skill-icon">👥</div>
+                        <h3 data-en="Professional Team" data-id="Tim Profesional">Tim Profesional</h3>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-icon">🌐</div>
-                        <h3>REST API</h3>
+                        <div class="skill-icon">📞</div>
+                        <h3 data-en="24/7 Support" data-id="Support 24/7">Support 24/7</h3>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-icon">💾</div>
-                        <h3>Room DB</h3>
+                        <div class="skill-icon">✅</div>
+                        <h3 data-en="Proven Success" data-id="Terbukti Berhasil">Terbukti Berhasil</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section - Pricing & Process -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Portfolio Projects</h2>
+            <h2 class="section-title" data-en="How It Works & Pricing" data-id="Cara Kerja & Harga">Cara Kerja & Harga</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">🛒</div>
+                    <div class="project-image">📸</div>
                     <div class="project-content">
-                        <h3 class="project-title">E-Commerce App</h3>
-                        <p class="project-description">
-                            Aplikasi e-commerce lengkap dengan fitur keranjang belanja, 
-                            pembayaran, dan tracking order dengan UI yang modern.
+                        <h3 class="project-title" data-en="Step 01 - To Get Started" data-id="Step 01 - Untuk Memulai">Step 01 - Untuk Memulai</h3>
+                        <p class="project-description" data-en="Send us your application details such as APK, screenshots. Make sure your application is safe and does not violate laws based on your target country of release." data-id="Kirimkan detail aplikasi anda seperti apk , screenshot, pastikan aplikasi aman tidak melanggar hukum berdasarkan target negara rilis Anda.">
+                            Kirimkan detail aplikasi anda seperti apk , screenshot, pastikan aplikasi aman tidak melanggar hukum berdasarkan target negara rilis Anda.
                         </p>
                         <div class="project-tags">
-                            <span class="tag">Kotlin</span>
-                            <span class="tag">MVVM</span>
-                            <span class="tag">Room</span>
-                            <span class="tag">Retrofit</span>
+                            <span class="tag" data-en="APK File" data-id="File APK">File APK</span>
+                            <span class="tag" data-en="Screenshots" data-id="Screenshot">Screenshot</span>
+                            <span class="tag" data-en="Verification" data-id="Verifikasi">Verifikasi</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link primary">Live Demo</a>
-                            <a href="#" class="project-link secondary">GitHub</a>
+                            <a href="#contact" class="project-link primary" data-en="Get Started" data-id="Siap Mulai">Siap Mulai</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">📊</div>
+                    <div class="project-image">⚙️</div>
                     <div class="project-content">
-                        <h3 class="project-title">Expense Tracker</h3>
-                        <p class="project-description">
-                            Aplikasi pencatat pengeluaran dengan dashboard analytics, 
-                            kategori custom, dan laporan bulanan yang detail.
+                        <h3 class="project-title" data-en="Step 02 - How It Works" data-id="Step 02 - Cara Kerjanya">Step 02 - Cara Kerjanya</h3>
+                        <p class="project-description" data-en="You give draft access to our console, then the professional SS Studio team will upload your application carefully and follow all Google Play guidelines." data-id="Anda memberikan akses draft ke console kami, kemudian tim profesional SS Studio akan upload aplikasi Anda dengan hati-hati dan mengikuti semua guideline Google Play.">
+                            Anda memberikan akses draft ke console kami, kemudian tim profesional SS Studio 
+                            akan upload aplikasi Anda dengan hati-hati dan mengikuti semua guideline Google Play.
                         </p>
                         <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">SQLite</span>
-                            <span class="tag">Charts</span>
-                            <span class="tag">Material Design</span>
+                            <span class="tag" data-en="Draft Access" data-id="Akses Draft">Draft Access</span>
+                            <span class="tag" data-en="Safe Upload" data-id="Upload Aman">Upload Aman</span>
+                            <span class="tag" data-en="Guideline Compliant" data-id="Sesuai Guideline">Sesuai Guideline</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link primary">Live Demo</a>
-                            <a href="#" class="project-link secondary">GitHub</a>
+                            <a href="#contact" class="project-link primary" data-en="Learn More" data-id="Pelajari Lebih">Pelajari Lebih</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">🎵</div>
+                    <div class="project-image">💰</div>
                     <div class="project-content">
-                        <h3 class="project-title">Music Player</h3>
-                        <p class="project-description">
-                            Pemutar musik dengan fitur playlist, equalizer, dan 
-                            sinkronisasi dengan cloud storage untuk backup lagu.
+                        <h3 class="project-title" data-en="Step 03 - Pricing Per App" data-id="Step 03 - Paket Harga Per App">Step 03 - Paket Harga Per App</h3>
+                        <p class="project-description" data-en="💰 $20 - Submit review💰 $20 - After app goes live💰 $40 - Weekly for each active app" data-id="💰 $20 - Submit review💰 $20 - Setelah app live💰 $40 - Mingguan untuk setiap app aktif">
+                            💰 $20 - Submit review<br>
+                            💰 $20 - Setelah app live<br>
+                            💰 $40 - Mingguan untuk setiap app aktif
                         </p>
                         <div class="project-tags">
-                            <span class="tag">Kotlin</span>
-                            <span class="tag">ExoPlayer</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Coroutines</span>
+                            <span class="tag">Submit: $20</span>
+                            <span class="tag">Live: $20</span>
+                            <span class="tag">Weekly: $40</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link primary">Live Demo</a>
-                            <a href="#" class="project-link secondary">GitHub</a>
+                            <a href="#contact" class="project-link primary" data-en="View Packages" data-id="Lihat Paket">Lihat Paket</a>
                         </div>
                     </div>
                 </div>
@@ -555,27 +595,34 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
-                <h2 class="section-title" style="color: #fff;">Kontak Saya</h2>
-                <p>
-                    Tertarik untuk berkolaborasi atau memiliki project yang menarik? 
-                    Jangan ragu untuk menghubungi saya!
+                <h2 class="section-title" style="color: #fff;" data-en="Contact SS Studio Now" data-id="Hubungi SS Studio Sekarang">Hubungi SS Studio Sekarang</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;" data-en="👉 Send your application details including APK and screenshots, then follow the steps above to get started." data-id="👉 Kirimkan detail aplikasi Anda beserta APK dan screenshot, kemudian ikuti langkah-langkah di atas untuk memulai.">
+                    👉 Kirimkan detail aplikasi Anda beserta APK dan screenshot, kemudian ikuti langkah-langkah di atas untuk memulai.
+                </p>
+                <p style="margin-bottom: 2rem;" data-en="We are ready to help you launch your application to Google Play Store professionally and reliably!" data-id="Kami siap membantu Anda meluncurkan aplikasi ke Google Play Store dengan profesional dan terpercaya!">
+                    Kami siap membantu Anda meluncurkan aplikasi ke Google Play Store dengan profesional dan terpercaya!
                 </p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <strong>Email</strong>
-                        <span>developer@email.com</span>
-                    </div>
-                    <div class="contact-item">
                         <div class="contact-icon">📱</div>
-                        <strong>WhatsApp</strong>
-                        <span>+62 812-3456-7890</span>
+                        <strong data-en="WhatsApp" data-id="WhatsApp">WhatsApp</strong>
+                        <span>+6287812925066</span>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <strong>LinkedIn</strong>
-                        <span>/in/androiddev</span>
+                        <div class="contact-icon">📧</div>
+                        <strong data-en="Email" data-id="Email">Email</strong>
+                        <span>tyoguns21@gmail.com</span>
                     </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💳</div>
+                        <strong data-en="Payment Method" data-id="Metode Bayar">Metode Bayar</strong>
+                        <span>PayPal</span>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px;">
+                    <p style="font-size: 0.95rem;">
+                        <strong data-en="✅ Secure" data-id="✅ Keamanan Terjamin">✅ Keamanan Terjamin</strong> | <strong data-en="✅ Experienced Team" data-id="✅ Tim Berpengalaman">✅ Tim Berpengalaman</strong> | <strong data-en="✅ Fast Process" data-id="✅ Proses Cepat">✅ Proses Cepat</strong> | <strong data-en="✅ 24/7 Support" data-id="✅ Support 24/7">✅ Support 24/7</strong>
+                    </p>
                 </div>
             </div>
         </div>
@@ -584,11 +631,59 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Android Developer Portfolio. Dibuat dengan ❤️</p>
+            <p data-en="&copy; 2025 SS Studio - Google Play Console Rental Service. Made with ❤️ for your app success" data-id="&copy; 2025 SS Studio - Google Play Console Rental Service. Dibuat dengan ❤️ untuk kesuksesan aplikasi Anda">&copy; 2025 SS Studio - Google Play Console Rental Service. Dibuat dengan ❤️ untuk kesuksesan aplikasi Anda</p>
         </div>
     </footer>
 
     <script>
+        // Language Switcher
+        const langBtns = document.querySelectorAll('.lang-btn');
+        const langElements = document.querySelectorAll('[data-en][data-id]');
+
+        // Set default language to English
+        let currentLang = localStorage.getItem('selectedLang') || 'en';
+        setLanguage(currentLang);
+
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                setLanguage(lang);
+                localStorage.setItem('selectedLang', lang);
+            });
+        });
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            
+            // Update active button
+            langBtns.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Update content
+            langElements.forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) {
+                    if (el.tagName === 'P' || el.tagName === 'H1' || el.tagName === 'H2' || el.tagName === 'H3') {
+                        if (el.getAttribute('data-en').includes('<br>')) {
+                            el.innerHTML = text;
+                        } else {
+                            el.textContent = text;
+                        }
+                    } else if (el.tagName === 'A') {
+                        el.textContent = text;
+                    } else if (el.tagName === 'SPAN' || el.tagName === 'STRONG') {
+                        el.textContent = text;
+                    } else {
+                        el.textContent = text;
+                    }
+                }
+            });
+        }
+
         // Smooth scrolling untuk navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -609,9 +704,25 @@
             if (window.scrollY > 100) {
                 header.style.background = 'rgba(255, 255, 255, 0.95)';
                 header.style.backdropFilter = 'blur(20px)';
+                // Change text color on scroll
+                document.querySelector('.logo').style.color = '#333';
+                document.querySelectorAll('.nav-menu a').forEach(a => a.style.color = '#333');
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.style.background = 'rgba(0, 0, 0, 0.1)';
+                    btn.style.color = '#333';
+                    btn.style.borderColor = 'rgba(0, 0, 0, 0.2)';
+                });
             } else {
                 header.style.background = 'rgba(255, 255, 255, 0.1)';
                 header.style.backdropFilter = 'blur(10px)';
+                // Reset text color
+                document.querySelector('.logo').style.color = '#fff';
+                document.querySelectorAll('.nav-menu a').forEach(a => a.style.color = '#fff');
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.style.background = 'rgba(255, 255, 255, 0.2)';
+                    btn.style.color = '#fff';
+                    btn.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+                });
             }
         });
 
